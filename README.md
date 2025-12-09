@@ -1,2 +1,220 @@
-# chuyendoihmtlds
-ko có j cả
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Dinh Độc Lập - 9A6 (Mobile Version)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden; /* Chặn cuộn ngang */
+            margin: 0;
+            padding: 0;
+            /* Đảm bảo cảm giác lướt mượt mà trên mobile */
+            -webkit-overflow-scrolling: touch; 
+        }
+
+        /* Thiết lập chung cho từng phần (Section) */
+        .mobile-section {
+            width: 100%;
+            min-height: 100vh; /* Mỗi phần chiếm ít nhất 1 màn hình */
+            padding: 2rem 1rem; /* Padding phù hợp cho điện thoại */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Căn giữa nội dung theo chiều dọc */
+            align-items: center;
+        }
+
+        /* --- MÀU NỀN GỐC (Restored) --- */
+        
+        /* Section 1: Màu đỏ Gradient như cũ */
+        #section1 {
+            background: linear-gradient(135deg, #B91C1C 0%, #DC2626 100%);
+            color: white;
+            text-align: center;
+        }
+
+        /* Các hiệu ứng cũ của Slide 1 */
+        .flag-star {
+            color: #FBBF24;
+            filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.8));
+            display: inline-block;
+        }
+        .text-glow {
+            text-shadow: 0 0 10px rgba(251, 191, 36, 0.4);
+        }
+
+        /* Style cho các box thông tin */
+        .info-box {
+            border-left: 5px solid #F97316; 
+            background-color: #FEF3C7; 
+        }
+        
+        .material-card {
+            background-color: #F3F4F6; 
+            border: 2px solid #6B7280; 
+            /* Tắt hiệu ứng hover bay lên vì trên điện thoại không dùng chuột */
+        }
+        
+        /* Đảm bảo ảnh không bị vỡ trên màn hình nhỏ */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Container nội dung để không bị sát lề */
+        .content-container {
+            width: 100%;
+            max-width: 600px; /* Giới hạn chiều rộng để dễ đọc */
+        }
+
+    </style>
+</head>
+<body>
+
+    <section id="section1" class="mobile-section">
+        <div class="content-container">
+            <h1 class="text-4xl font-extrabold mb-3 text-yellow-400 text-glow flex items-center justify-center gap-3">
+    <span class="flag-star text-3xl">★</span> 
+    <span>DINH ĐỘC LẬP</span> 
+    <span class="flag-star text-3xl">★</span>
+</h1>
+            
+            <h2 class="text-lg font-semibold mb-6 text-red-100">
+                Dự Án Lịch Sử của lớp 9A6
+            </h2>
+            
+            <p class="text-sm text-red-100 leading-relaxed italic border-y border-red-200 py-3 mb-6">
+                Chúng em xin giới thiệu mô hình tái hiện Dinh Độc Lập - biểu tượng của Độc lập, Hòa bình và Thống nhất.
+            </p>
+            
+            <div class="mt-4">
+                <img src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/09/1-10.jpg" 
+                        alt="Hình ảnh mô hình Dinh Độc Lập" 
+                        class="rounded-xl shadow-2xl mx-auto ring-2 ring-yellow-400">
+            </div>
+            
+            <div class="mt-8 animate-bounce text-yellow-300 text-sm">
+                ↓ Vuốt xuống để xem tiếp ↓
+            </div>
+        </div>
+    </section>
+
+    <section id="section2" class="mobile-section bg-white">
+        <div class="content-container">
+            <h2 class="text-3xl font-extrabold text-orange-600 mb-6 text-center">Chi Tiết Mô Hình</h2>
+            
+            <div class="space-y-4 text-left"> 
+                
+                <div class="info-box p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold text-orange-700 mb-2"> Thông Số Của Mô Hình Dinh Độc Lập</h3>
+                    <ul class="text-sm text-gray-800 space-y-2"> 
+                        <li class="flex justify-between border-b border-amber-200 pb-1">
+                            <span>Tỷ Lệ:</span> <b>1:400</b>
+                        </li>
+                        <li class="flex justify-between border-b border-amber-200 pb-1">
+                            <span>Dài x Rộng:</span> <b>60cm x 60cm</b>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Chiều Cao:</span> <b>20cm</b>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="p-4 bg-gray-100 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold text-gray-700 mb-2">📍 Vị Trí</h3>
+                    <p class="text-sm text-gray-700 mb-2"> 
+                        135 Nam Kỳ Khởi Nghĩa, Q.1, TPHCM. Nơi ghi dấu ngày 30/4/1975 lịch sử.
+                    </p>
+                    <img src="https://dulichlive.com/sai-gon/wp-content/uploads/sites/9/2020/11/Dia-chi-Dinh-Doc-Lap.png" 
+                        class="rounded w-full shadow-sm">
+                </div>
+
+                <div class="p-4 bg-green-50 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold text-green-700 mb-2"> Ý Nghĩa</h3>
+                    <p class="text-sm text-gray-800">
+                        Kiến trúc sư: Ngô Viết Thụ. <br>
+                        Kết hợp hiện đại và triết lý phương Đông. Biểu tượng của tinh thần bất khuất.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section3" class="mobile-section bg-blue-50">
+        <div class="content-container">
+            <h2 class="text-3xl font-extrabold text-blue-700 mb-6 text-center">⚙️ Vật Liệu ⚙️</h2>
+            
+            <div class="grid grid-cols-2 gap-3"> 
+                
+                <div class="material-card p-3 rounded-xl text-center shadow-sm">
+                    <span class="text-2xl block">📦</span>
+                    <h3 class="text-xs font-bold text-gray-900 mt-1">Xốp cứng</h3>
+                    <p class="text-gray-500 text-[10px]">Khung & Móng</p>
+                </div>
+
+                <div class="material-card p-3 rounded-xl text-center shadow-sm">
+                    <span class="text-2xl block">🥢</span>
+                    <h3 class="text-xs font-bold text-gray-900 mt-1">Que/Tăm</h3>
+                    <p class="text-gray-500 text-[10px]">Hàng rào</p>
+                </div>
+
+                <div class="material-card p-3 rounded-xl text-center shadow-sm">
+                    <span class="text-2xl block">🎨</span>
+                    <h3 class="text-xs font-bold text-gray-900 mt-1">Màu Acrylic</h3>
+                    <p class="text-gray-500 text-[10px]">Sơn phủ</p>
+                </div>
+
+                <div class="material-card p-3 rounded-xl text-center shadow-sm">
+                    <span class="text-2xl block">💧</span>
+                    <h3 class="text-xs font-bold text-gray-900 mt-1">Keo Dán</h3>
+                    <p class="text-gray-500 text-[10px]">Liên kết</p>
+                </div>
+
+                <div class="material-card p-3 rounded-xl text-center shadow-sm">
+                    <span class="text-2xl block">🌳</span>
+                    <h3 class="text-xs font-bold text-gray-900 mt-1">Cỏ cây giả</h3>
+                    <p class="text-gray-500 text-[10px]">Sân vườn</p>
+                </div>
+
+                <div class="material-card p-3 rounded-xl text-center shadow-sm">
+                    <span class="text-2xl block">💡</span>
+                    <h3 class="text-xs font-bold text-gray-900 mt-1">Đèn LED</h3>
+                    <p class="text-gray-500 text-[10px]">Ánh sáng</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="section4" class="mobile-section bg-teal-50">
+        <div class="content-container text-center px-4">
+            <h2 class="text-3xl font-extrabold text-teal-800 mb-4">Trân Trọng Cảm Ơn</h2>
+            
+            <p class="text-lg font-semibold text-gray-700 mb-6">
+                Kính gửi Quý Thầy/Cô và các bạn,
+            </p>
+            
+            <div class="p-4 rounded-xl bg-white shadow-lg mb-8">
+                <p class="text-base text-gray-600 italic leading-relaxed">
+                    "Cảm ơn mọi người đã xem qua mô hình Dinh Độc Lập của lớp 9A6. <br>
+                    Chúng em rất mong nhận được những đóng góp ý kiến."
+                </p>
+            </div>
+            
+            <div class="text-xl font-bold text-teal-600">
+             9A6 Xin Chào! 🎉
+            </div>
+
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" 
+                    class="mt-12 px-6 py-2 bg-teal-600 text-white rounded-full text-sm font-bold shadow-lg">
+                ↑ Về đầu trang
+            </button>
+        </div>
+    </section>
+
+</body>
+</html>
